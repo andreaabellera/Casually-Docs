@@ -1,0 +1,19 @@
+{
+  "name": "casuallydocs",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.2.0"
+  },
+  "dependencies": {
+    "casually-components": "^0.0.46",
+    "casually-css": "^0.9.0",
+    "igniteui-webcomponents-core": "^4.2.5",
+    "igniteui-webcomponents-gauges": "^4.2.5"
+  }
+}
