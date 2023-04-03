@@ -1,11 +1,5 @@
-// Module Manager for registering the modules of the chart
-import { ModuleManager } from 'igniteui-webcomponents-core';
-// Bullet Graph Module
-import { IgcRadialGaugeCoreModule  } from 'igniteui-webcomponents-gauges';
-import { IgcRadialGaugeModule } from 'igniteui-webcomponents-gauges';
+// Sample import artwork
+import create from 'casually-css'
 
-// register the modules
-ModuleManager.register(
-    IgcRadialGaugeCoreModule,
-    IgcRadialGaugeModule
-);
+let container = document.getElementById('art-ctr')
+create(container, 'hippo')
