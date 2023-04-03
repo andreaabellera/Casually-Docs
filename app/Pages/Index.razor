@@ -9,18 +9,18 @@ Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
 
-<div id="art-ctr" style="height:300px;width:300px;">
+<div @ref="artCtr" style="height:300px;width:300px;">
     @* Casually CSS Artwork goes here *@
 </div>
 
 <button @onclick="onbuttonclick"> Create Swiss Army Knife  </button>
 
 @code{
+    ElementReference artCtr;
     private string artName = "swiss";
-    private string artCtr = "art-ctr";
 
     async protected void onbuttonclick (MouseEventArgs args)
     {
-        await JS.InvokeVoidAsync("createArt", artCtr, artName);
+        await JS.InvokeVoidAsync("create", artCtr, artName);
     }
 }

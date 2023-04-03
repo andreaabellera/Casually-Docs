@@ -14,7 +14,7 @@
     <link href="CasuallyDocs.styles.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="favicon.png"/>
     <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
-    <script src="js/create.js"></script>
+    <script src="https://unpkg.com/casually-css@0.10.0/create.js"></script>
 </head>
 <body>
     <component type="typeof(App)" render-mode="ServerPrerendered" />
@@ -31,12 +31,5 @@
     </div>
 
     <script src="_framework/blazor.server.js"></script>
-    <script src="js/casuallylibs.umd.js"></script>
-    <script>
-        function createArt(container, artName){
-            let artCtr = document.getElementById(container)
-            create(artCtr, artName)
-        }
-    </script>
 </body>
 </html>
