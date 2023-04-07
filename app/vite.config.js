@@ -6,9 +6,8 @@ module.exports = {
       lib: {
         entry: resolve(__dirname, './casuallylibs.js'),
         name: 'CasuallyLibs',
-        // the proper extensions will be added
         fileName: 'casuallylibs',
       },
-      outDir: '../wwwroot/js'
+      outDir: '../wwwroot/modules',
     }
 }
